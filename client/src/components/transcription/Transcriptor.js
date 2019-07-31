@@ -10,17 +10,17 @@ export default class Transcriptor extends Component {
         }
     }
 
-    submitLink = (link) => {
+    submitLink = (id) => {
         this.setState({
-            video_link: link
+            video_id: id
         });
-        console.log(`Link recieved in transcriptor parent: ${link}`)
+        console.log(`Video ID recieved in transcriptor parent: ${id}`)
     }
 
     render() {
         return (
             <div>
-                <VideoSubmit submitLink={this.submitLink} />
+                <VideoSubmit submitID={this.submitLink} />
             </div>
         )
     }
