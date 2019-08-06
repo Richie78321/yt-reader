@@ -15,6 +15,9 @@ export default class Transcriptor extends Component {
             video_id: id
         });
         console.log(`Video ID recieved in transcriptor parent: ${id}`)
+
+        //Test API call
+        fetch(`/transcription/get/${id}`);
     }
 
     render() {
